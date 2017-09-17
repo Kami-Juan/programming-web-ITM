@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+hr{
+    height: 7px;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+}
+
+body{
+    background-color: white;
+}
+
+/* REUTILIZABLE */
+
+.navegadores p{
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+
+/* ------------------------ */
+#container{
+    color: #1d1d26;
+    font-family: 'Lato', sans-serif;
+}
+
+.centrar{
+    width: 980px;
+    text-align: center;
+    margin: auto;
+}
+
+#index{
+    margin-top: 15px;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+#index a{
+    text-decoration: none;
+    background-color: #fff;
+    color: #1d1d26;
+    /* border-radius: 10px; */
+     padding: 20px; 
+    box-sizing: border-box;
+    margin-right: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 22px; 
+    opacity: 1;
+}
+
+#index a:hover{
+    background-color: #ece8ee;
+    transition: opacity 1s;
+    opacity: 0;
+    color: black;
+}
+
+.paginas{
+    /* margin: 30px 0 30px 0; */
+    /* text-align: justify; */
+    font-size: 20px;
+}
+
+.paginas h1, h2{
+    text-align: center;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    width: 400px;
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px 0 10px 0;
+}
+
+.paginas p{
+    margin: 20px 0 20px 0;
+}
+
+.paginas li{
+    margin-left: 150px;
+    text-align: justify;
+}
+
+#chrome{
+    background-image: url(../img/chrome-logo.png);
+    background-repeat: no-repeat;
+    background-size: 630px;
+    background-position: 170px;
+}
+
+#chrome p{
+    background-color: rgba(74,249,93,.5);
+    box-sizing: border-box;
+}
+
+
+#chrome h1, #chrome h2{
+    background-color: rgba(255, 16, 38, 0.40);
+}
+
+#firefox{
+    background-image: url(../img/firefox-logo.png);
+    background-repeat: no-repeat;
+    background-size: 630px;
+    background-position: 170px 200px;
+}
+
+#firefox p{
+    background-color: rgba(110,98,199,.74);
+    border-radius: 10px;
+    
+}
+
+#firefoxp{
+    padding: 20px;
+}
+
+#firefox ul{
+    background-color: rgba(110,98,199,.65);
+    padding: 20px;
+    width: 65%;
+    margin: auto;
+    border-radius: 10px;
+    
+}
+
+#firefox h1, #firefox h2{
+    background-color: rgba(226,38,55, .4);
+}
+
+#safari{
+    background-image: url(../img/safari-logo.png);
+    background-repeat: no-repeat;
+    background-size: 630px;
+    background-position: 170px;
+}
+
+#safari p{
+    background-color: rgba(255,247,247,.70);  
+}
+
+#safari h1, #safari h2{
+    background-color: rgba(65,47,49, .7);
+    color: white;
+}

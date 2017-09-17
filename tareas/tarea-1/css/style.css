@@ -1,0 +1,135 @@
+/* ------------CONFIGURACION INICIAL------------ */
+*{
+    margin: auto;
+    margin: 0 40px 0 40px;
+    padding: 0;
+    box-sizing: content-box;
+    background-color: #f6f8f8;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+}
+
+b, u{
+    margin: 0;
+}
+
+/* ------------HEADERS------------ */
+h1, h2{
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+h1{
+    font-size: 30px;
+}
+
+h2{
+    font-size: 24px;
+}
+
+h3{
+    font-size: 40px;
+    text-transform: uppercase;
+}
+/* -----------ANOTHER TAGS---------- */
+
+header{
+    /* text-align: center; */
+    background-color: #595246;
+    height: 113px;
+    /* margin-top: 30px; */
+    opacity: 75%;
+}
+
+/* header:hover{
+    opacity: 100%;
+} */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+header figure, header img{
+    margin:initial;
+    text-align: initial;
+    float: right;
+
+    /* position: fixed; */
+}
+
+header img{
+    width: 50px;
+    height:50px;
+}
+
+header h1{
+    margin: initial;
+    opacity: initial;
+    margin-left: 10px;
+    margin-top: 10px;
+    /* color: white; */
+    background-color: #595246;
+    color: white;
+    /* font-family: 'Cedarville Cursive', cursive;     */
+    display: inline-block;
+    width: 25%;
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+}
+
+p{
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+ul, ol{  
+    margin-left: 50px;
+    font-size: 24px;
+}
+
+figure{
+    width: 100%;
+    margin:0;
+    margin-top: 30px;
+    text-align: center;
+}
+
+figure img{
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+}
+
+hr{
+    width: 8%;
+    border: 4px #8a0217 solid;
+    margin: auto;
+    text-align: left;
+    margin-top: 30px;
+}
+
+/* ------------ID'S------------ */
+#list-standar{
+    margin-top: 70px;
+}
+
+#list-standar li{
+    margin-bottom: 30px;
+    margin-left: 70px;
+}
+
+#tag-margin-bottom{
+    margin-bottom: 70px;
+}
+
+#tag-margin-top{
+    margin-top: 70px;
+}
+
+#li-margin li{
+    margin-bottom: 5px;
+}

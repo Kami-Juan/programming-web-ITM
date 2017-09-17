@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Descripción del sitio web">
+    <title>Titulo del sitio web</title> 
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Listas ordenadas y desordenadas -->
+    <!-- Tarea : Foto, titulo y definición, hr, lo mismo -->
+    <div id="app">
+        <h1>PAGINA NUEVA</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid necessitatibus blanditiis repellat architecto commodi iste, iusto veniam magnam nihil, est nobis id voluptas cum similique, dolore quidem aut in excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto error ab blanditiis dignissimos natus ipsum rerum in beatae. Consectetur voluptas vitae sunt autem nesciunt quae laborum tenetur voluptate provident ipsum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor temporibus a cumque totam. Eveniet non esse corporis eos quisquam molestias enim cum, quas at ipsa,maxime quasi magni voluptatem quos. {{ textos }}
+        </p> 
+           <div class="buttonMagia" type="button" @click="aumentar">Magia</div>
+           <div class="buttonMagia" type="button" @click="borrar">Borrar</div>
+        <br><br>
+        <hr>
+        <br><br>
+        <div id="ejemplo">
+            <img src="img/postman-logo.png" alt="postman" width="400">
+            <h2>Historia del HTML</h2>
+            <p id="parrafo2">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt porro ut reiciendis provident perspiciatis temporibus aliquam nihil. Inventore ratione culpa adipisci, velit error reiciendis magnam vel quam numquam, voluptate laudantium quis suscipit deleniti harum doloribus facilis non laboriosam aperiam! Atque, perspiciatis cum facilis unde exercitationem ad distinctio cupiditate quidem, earum minima illum commodi obcaecati vitae fugiat. Deleniti in ut alias, atque sit vitae quod, esse, cupiditate amet molestias fugiat quasi.
+            </p>
+        </div>
+    </div>
+    <script src="js/libraries/vue.js"></script>
+    <!-- <script src="js/libraries/lorem-generate.js"></script> -->
+    <script>
+        new Vue({
+            el: '#app',
+            data:{
+                texto: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt porro ut reiciendis provident perspiciatis temporibus aliquam nihil. Inventore ratione culpa adipisci, velit error reiciendis magnam vel quam numquam, voluptate laudantium quis suscipit deleniti harum doloribus facilis non laboriosam aperiam! Atque, perspiciatis cum facilis unde exercitationem ad distinctio cupiditate quidem, earum minima illum commodi obcaecati vitae fugiat. Deleniti in ut alias, atque sit vitae quod, esse, cupiditate amet molestias fugiat quasi.',
+                textos: ''
+            },
+            methods: {
+                aumentar: function(){
+                    // this.textos += this.texto;
+                    // var lorem = new LoremIpsum();
+                    // this.texto = lorem.generate(100);
+                    this.textos += this.texto;
+                    localStorage.setItem('datos', JSON.stringify(this.textos));                 
+                },
+                borrar: function(){
+                    var numLetras = this.textos.split("").length - this.texto.split("").length;
+                    var texto = [];
+                    this.textos.split("").forEach(function(e, index) {
+                        if(index <= numLetras - 1){
+                            texto.push(e);
+                        }
+                    });
+                    this.textos = texto.join("");
+                    localStorage.setItem('datos', JSON.stringify(this.textos));
+                }
+            },
+            created: function(){
+                var data = JSON.parse(localStorage.getItem('datos'));
+                this.textos = data;
+            }
+        });
+    </script>
+</body>
+</html>

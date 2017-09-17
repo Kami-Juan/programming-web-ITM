@@ -1,0 +1,11 @@
+body{
+    background-color: white;
+}
+
+h1:first-child{
+    margin-top: 30px;
+}
+
+h1:last-child{
+    margin-bottom: 30px;
+}

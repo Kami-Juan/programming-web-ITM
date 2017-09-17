@@ -1,0 +1,38 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: helvetica;
+}
+
+.centrar{
+	margin: auto;
+	width: 980px;
+	text-align: center;
+}
+
+.header h1{
+	font-size: 30px;
+	font-weight: bold;
+	margin: 15px 0;
+}
+
+.header{
+	border: 2px red solid;
+	padding-bottom: 20px;
+	margin-bottom: 30px;
+}
+
+.header p{
+	background-color: #ccc;
+	text-align: justify;
+	padding: 0 30px;
+}
+
+.google-maps h1{
+
+	font-weight: bold;
+	margin-bottom:  15px;
+}

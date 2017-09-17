@@ -1,0 +1,80 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: helvetica;
+	font-size: 16px;
+	color: #333;
+}
+
+#contenedor1{
+	box-sizing: border-box;
+	padding: 20px;
+}
+
+#contenedor2{
+	background-size: cover;
+	background-image: url(../img/itm.jpg);
+	background-position: 0 -120px;
+	padding: 20px;
+	box-sizing: border-box;
+	height: 400px;
+	text-align: center;
+}
+
+#pie{
+	background-color: #800000;
+	background-image: url(../img/logo-tec.png);
+	background-repeat: no-repeat;
+	background-position: 700px -30px;
+	height: 150px;
+	color: white;
+	padding: 20px;
+	box-sizing: border-box;
+	text-align: center; 
+}
+
+#liga{
+	color: #FFCC66;
+	font-weight: bold;
+	padding: 10px;
+}
+
+h2{
+	margin-top: 100px;
+	padding: 30px;
+	background-color: rgba(255,255,255,.5);  
+}
+
+#marquesina{
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+marquee{
+	width: 400px;
+	padding: 0px 20px;
+	box-sizing: border-box;
+	height: 160px;
+}
+
+.centrar{
+	border: 1px blue solid;
+	width: 980px;
+	margin: auto;
+}
+
+a{
+	background-color: #cc9900;
+	color: white;
+	padding: 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+a:hover{
+	background-color: #800000;
+
+}
