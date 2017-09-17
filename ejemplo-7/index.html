@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="centrar">
+        <h1>TABLAS</h1>
+        <p>codigo para las tablas</p>
+        <br>
+        <br>
+        <br>
+        <table border="0" width="900" cellpading="20" cellspacing="10" aling="center">
+            <tr bgcolor="#ccc">
+                <th width="300" rowspan="3" height="100">Sabado, Domingo, Lunes</th>
+                <td width="200" height="50" colspan="2">Curso de HTML, Curso de PHP</td>
+                <td width="200">Curso de Photoshop</td>
+            </tr>
+            <tr bgcolor="#ccc">
+                <td>Curso de CSS</td>
+                <td>Curso de animaciones</td>
+                <td>123</td>
+            </tr>
+            <tr bgcolor="#ccc">
+                    <td>Word</td>
+                    <td>Excel</td>
+                    <td>Power Point</td>
+                </tr>
+        </table>
+        <br><br>
+        <table id="table-tarea" border="1">
+            <tr>
+                <th colspan="4">Diferencias entre el hombre y el perro</th>
+            </tr>
+            <tr>
+                <th rowspan="2">DIFERENCIAS</th>
+                <th colspan="2">PERRO</th>
+                <th rowspan="2">HOMBRE</th>
+            </tr>
+            <tr>
+                <th>PEQUEÑO</th>
+                <th>GRANDE</th>
+            </tr>
+            <tr>
+                <td>DURACION CRECIMIENTO</td>
+                <td>10 MESES</td>
+                <td>18 A 24 MESES</td>
+                <td>16 AÑOS</td>
+            </tr>
+            <tr>
+                <td>TIEMPO DE GESTACIÓN</td>
+                <td colspan="2">58 A 63 DÍAS</td>
+                <td>9 MESES</td>
+            </tr>
+            <tr>
+                <td>DURACION DE VIDA DEL PELO/CABELLO</td>
+                <td colspan="2">1 AÑO</td>
+                <td>2 A 7 AÑOS</td>
+            </tr>
+        </table>
+    </div>
+    <!-- <script>
+        var hover = false;
+        document.querySelectorAll('td').forEach(function(el){
+           el.addEventListener('mouseover', function(e){
+              if(hover === true){
+                el.align = "center"
+                el.style.backgroundColor = "white"; hover = false;
+              } 
+              
+           });
+
+           el.addEventListener('click', function(){
+              el.style.backgroundColor = "red";
+           });
+        });
+    </script> -->
+</body>
+</html>
